@@ -1,10 +1,8 @@
 ﻿/* SAY HI (copied, not original) */
 
 function sayHi(){
-  var txtName = document.getElementById("txtName");
-  var txtOutput = document.getElementById("txtOutput");
-  var name = txtName.value;
-  txtOutput.value = "Hi there, " + name + "!"
+  var txtName = document.getElementById("txtName").value;
+  document.getElementById("txtOutput").innerHTML = "Hi there, " + txtName + "! Pleasure to have you here!"
   }
 
 /* REVERSE A STRING (Jan 17 2017)  */
@@ -14,8 +12,8 @@ function reverseString() {
   var extract = y.split("");
   var backwards = extract.reverse();
   var rebuilt = backwards.join("");
-  var strOut = document.getElementById("strOut");
-  strOut.value = rebuilt;
+  document.getElementById("strOut").innerHTML =
+  rebuilt;
   }
 
 /* FACTORIALIZE A NUMBER (Jan 17 2017) */
@@ -28,8 +26,7 @@ function factorializeMe() {
   }
   var factorItCommas =
   factorIt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  var integerOut = document.getElementById("integerOut");
-  integerOut.value = factorItCommas;
+  document.getElementById("integerOut").innerHTML  = factorItCommas;
   }
 
 /* CHECK FOR PALINDROMES (Jan 19 2017) */
@@ -38,13 +35,14 @@ function palindrome() {
   var y = checkIn.value;
   var strLettersOnly = y.toLowerCase().match(/[A-Za-z0-9]/gi).join("");
   var strBackwardsLettersOnly =  y.toLowerCase().match(/[A-Za-z0-9]/gi).reverse().join("");
-  var checkOut = document.getElementById("checkOut");
   if (strLettersOnly == strBackwardsLettersOnly) {
-    checkOut.value = true;
+    var checkOut = true;
 }
 
   else
-    checkOut.value = false;
+    checkOut = false;
+
+document.getElementById("checkOut").innerHTML = checkOut;
 }
 
 /* ABBREVIATE ANY SENTENCE TO AN ACCRONYM */
@@ -57,7 +55,7 @@ function accronym() {
   var strToWordsFixed = strToWords[i][0];
   abbr.push(strToWordsFixed);
   }
-  var sentenceOut = document.getElementById("sentenceOut"); sentenceOut.value = abbr.join("").toString();
+  document.getElementById("sentenceOut").innerHTML = abbr.join("").toString();
 }
 
 /* SCRAMBLE A PARAGRAPH RANDOMLY */
@@ -74,8 +72,7 @@ function paragraphScrambler() {
   scrambledParagraph.push(word);
   }
   newParagraph = scrambledParagraph.join(" ");
-  var newParagraphOut = document.getElementById("newParagraphOut");
-  newParagraphOut.value = newParagraph;
+  document.getElementById("newParagraphOut").innerHTML = newParagraph;
 }
 
 /* REVERSE WORDS IN A STRING */
@@ -87,8 +84,7 @@ function reverseWords() {
   for ( var i = strArray.length; i > 0; i-- ) {
     strCap += strArray.slice(i-1, i).toString() + " ";
   }
-  newSentenceOut = document.getElementById("backwardsOut");
-  newSentenceOut.value = strCap;
+  document.getElementById("backwardsOut").innerHTML = strCap;
 }
 
 /*
@@ -126,7 +122,6 @@ $( document ).ready(function() {
     $(this).css("background-color", "#E6E6FA");
   });
 });
-
 
 $( document ).ready(function() {
   $( ".js-challenges" ).mouseenter(function() {
