@@ -3,16 +3,20 @@
   margin-top: 0;
   margin-left: 0;
   background-color: #E6E6FA;
+  font: rgb(10,10,10);
+  background-image: url(blue_square.svg);
+  background-repeat: repeat;
+  background-size: 10px;
 }
 
 nav {
   /*margin: 0 0 auto 0;*/
-  background-color: RGB(80, 80, 95);
+  background-color: RGB(70, 70, 85);
   height: 50px;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.19), 0 6px 20px -2px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.19), 0 6px 20px 2px rgba(0, 0, 0, 0.20);
   border-bottom: 1px solid black;
 }
 
@@ -25,6 +29,7 @@ nav a {
   font-size: 1.1em;
   color: white;
   text-decoration: none;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.69), 0 3px 10px rgba(0, 0, 0, 0.60);
 }
 
 nav a:hover {
@@ -33,9 +38,11 @@ nav a:hover {
 
 h1 {
   font-family: 'Poiret One', cursive;
+  color: white;
   text-align: center;
   margin-top: 80px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.69), 0 3px 10px rgba(0, 0, 0, 0.60);
   }
 
 .one-line {
@@ -61,12 +68,15 @@ h1 {
 form {
   width: 90%;
   margin: 10px auto 10px auto;
+  min-height: 180px;
+  padding: 5px;
 }
 
-input {
+input.color-input {
   display: block;
-  margin: 0 auto 10px auto;
-  width: 300px;
+  margin: 20px auto 10px auto;
+  min-width: 400px;
+  white-space: initial;
   height: 25px;
   background-color: #E6E6FA;
   /* background-color: #ffffcc; */
@@ -76,23 +86,27 @@ input {
   font-weight: bold;
 }
 
-#strOut {
+.boldOutput {
   text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-textarea {
+textarea, #newParagraphOut {
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 20px auto 10px auto;
   width: 400px;
   height: 250px;
   background-color: #E6E6FA;
   /* background-color: #ffffcc; */
   /* font-weight: bold; */
   text-align: left;
+  text-overflow:
+  font-size: 0.8em;
   font-family: Consolas, Courier New, monospace, Palatino, Verdana, 'sans serif';
 }
 
-output {
+/* output {
   display: block;
   margin: 10px auto 10px auto;
   width: 80px;
@@ -102,12 +116,7 @@ output {
   font-size: 1.3em;
   text-align: center;
   border: solid black 1px;
-}
-
-.boldOutput {
-  font-weight: bold;
-  font-size: 0.75em;
-}
+} */
 
 .button {
   display: block;
@@ -148,37 +157,36 @@ output {
   font-family: Palatino, Verdana, 'sans serif';
 }
 
-#flexbox-model {
+.flexbox-model {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   }
 
 .js-challenges {
-  height: 300px;
-  width: 47%;
+  width: 60%;
   margin-top: 10px;
   background-color: #BAB6EB;
-  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.19), 0 6px 20px -2px rgba(0, 0, 0, 0.20);
+  box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.39), 6px 6px 20px -2px rgba(0, 0, 0, 0.40);
   /* background-color: #ffccff; */
   /* background: radial-gradient(ellipse farthest-corner at 45px 45px , #BAB6EB 20%, rgba(0, 0, 255, .05) 50%, #BAB6EB 95%); */
 }
 
-form legend {
+legend {
   font-weight: bold;
-}
-
-form legend {
   font-size: 0.9em;
 }
 
-#newParagraphOut {
-  font-weight: bold;
+label {
+  font-size: 0.9em;
+
 }
 
-#forwardIn, #backwardsOut {
-  width: 500px;
+#newParagraphOut {
+  font-size: .8em;
+  white-space: initial;
+  overflow: hidden;
 }
 
 @media (max-width: 840px) and (min-width: 641px){
