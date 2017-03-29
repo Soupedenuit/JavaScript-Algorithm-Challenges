@@ -6,6 +6,7 @@
   font: rgb(10,10,10);
   background-image: url(blue_square.svg);
   background-repeat: repeat;
+  background-attachment: fixed;
   background-size: 10px;
 }
 
@@ -41,7 +42,7 @@ h1 {
   color: white;
   text-align: center;
   margin-top: 80px;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.69), 0 3px 10px rgba(0, 0, 0, 0.60);
   }
 
