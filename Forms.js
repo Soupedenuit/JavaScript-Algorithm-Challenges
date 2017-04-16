@@ -6,15 +6,19 @@ function sayHi(){
   }
 
 /* REVERSE A STRING (Jan 17 2017)  */
+/* USING jQuery ==============>  */
 
-function reverseString() {
-  var y = strIn.value;
+$( document ).ready(function() {
+  $( "#reverseString" ).click(function() {
+  var y = document.getElementById("strIn").value;
   var extract = y.split("");
   var backwards = extract.reverse();
   var rebuilt = backwards.join("");
   document.getElementById("strOut").innerHTML =
   rebuilt;
-  }
+});
+});
+
 
 /* FACTORIALIZE A NUMBER (Jan 17 2017) */
 
@@ -85,6 +89,74 @@ function reverseWords() {
     strCap += strArray.slice(i-1, i).toString() + " ";
   }
   document.getElementById("backwardsOut").innerHTML = strCap;
+}
+
+
+/* ROMAN NUMERAL CONVERTER (Apr 14, 2017) */
+
+function convertToRomanNum(num) {
+  const characters = {
+    1: "I",
+    2: "V",
+    3: "X",
+    4: "L",
+    5: "C",
+    6: "D",
+    7: "M",
+    8: "Ṽ",
+    9: "Ẋ",
+    10: "Ḹ",
+    11: "Č"
+  };
+  var num = numberIn.value;
+  var roman = [];
+  var numArr = num.toString().split('');
+
+  const digits = {
+    1: numArr[numArr.length - 1],
+    3: numArr[numArr.length - 2],
+    5: numArr[numArr.length - 3],
+    7: numArr[numArr.length - 4],
+    9: numArr[numArr.length - 5],
+    11: numArr[numArr.length - 6]
+  };
+
+  for (let i = 1; i < numArr.length * 2; i = i + 2) {
+
+    if (digits[i] > 0 && digits[i] <= 3) {
+      for (let j = 0; j < digits[i]; j++) {
+      roman.unshift(characters[i]);
+      }
+    }
+
+    else if (digits[i] == 4) {
+      roman.unshift(characters[i + 1]);
+      roman.unshift(characters[i]);
+    }
+
+    else if (digits[i] == 5) {
+      roman.unshift(characters[i+1]);
+    }
+
+    else if (digits[i] >= 6 && digits[i] <= 8) {
+      for (let j = 5; j < digits[i]; j++) {
+        roman.unshift(characters[i]);
+      }
+        roman.unshift(characters[i + 1]);
+    }
+
+    else if (digits[i] == 9) {
+      roman.unshift(characters[i + 2]);
+      roman.unshift(characters[i]);
+    }
+
+    else ;
+
+  } //closing bracket for outer condition
+
+  var result = roman.join('');
+
+  document.getElementById("romanOut").innerHTML = result;
 }
 
 /*
