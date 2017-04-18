@@ -1,8 +1,8 @@
 ﻿/* SAY HI (copied, not original) */
 
 function sayHi(){
-  var txtName = document.getElementById("txtName").value;
-  document.getElementById("txtOutput").innerHTML = "Hi there, " + txtName + "! Pleasure to have you here!"
+  var txtName = window.document.getElementById("txtName").value;
+  window.document.getElementById("txtOutput").innerHTML = "Hi there, " + txtName + "! Pleasure to have you here!"
   }
 
 /* REVERSE A STRING (Jan 17 2017)  */
