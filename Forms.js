@@ -41,7 +41,7 @@ function palindrome() {
   var strBackwardsLettersOnly =  y.toLowerCase().match(/[A-Za-z0-9]/gi).reverse().join("");
   if (strLettersOnly == strBackwardsLettersOnly) {
     var checkOut = true;
-}
+  }
 
   else
     checkOut = false;
@@ -70,10 +70,11 @@ function paragraphScrambler() {
   var xx = x.length;
   var scrambledParagraph = [];
   for (var i = 0; i < xx; i ++) {
-  var y = Math.random() * (xx - 1) + 0;
+  var y = Math.random() * (xx - 1 - i) + 0;
   var z = Math.round(y);
   var word = x[z];
   scrambledParagraph.push(word);
+  x.splice(z, 1);
   }
   newParagraph = scrambledParagraph.join(" ");
   document.getElementById("newParagraphOut").innerHTML = newParagraph;
@@ -108,7 +109,7 @@ function convertToRomanNum(num) {
     10: "Ḹ",
     11: "Č"
   };
-  var num = numberIn.value;
+  num = document.getElementById("numberIn").value;
   var roman = [];
   var numArr = num.toString().split('');
 
