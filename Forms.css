@@ -4,10 +4,10 @@ body {
   margin-left: 0;
   background-color: #E6E6FA;
   font: rgb(10,10,10);
-  //background-image: url(blue_square2.svg);
-  //background-repeat: repeat;
-  //background-attachment: fixed;
-  //background-size: 12px;
+  background-image: url(blue_square2.svg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 12px;
 }
 
 nav {
