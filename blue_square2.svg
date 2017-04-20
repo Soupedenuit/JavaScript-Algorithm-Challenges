@@ -3,7 +3,10 @@
  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
  <title>svg2</title>
  <g>
-  <title>Layer 1</title>
-  <rect stroke="#000000" id="svg_3" fill="#003f7f" width="50" height="50" stroke-width="3" stroke-dasharray="0,50,50,0,50,50"/>
+  <title>Layer 1</title><rect stroke="#000000" id="svg_3" fill="#003f7f" width="50" height="50" stroke-width="3" stroke-dasharray="0,50,50,0,50,50"/>
+  <line fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="0,50,50,0,50,50" stroke-linejoin="null" stroke-linecap="null" x1="51.49421" y1="50.00283" x2="51.52314" y2="50.48174" id="svg_2"/>
+  <line fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="0,50,50,0,50,50" stroke-linejoin="null" stroke-linecap="null" x1="50.04461" y1="51.45564" x2="50.57495" y2="51.05708" id="svg_4"/>
+  <line fill="none" stroke-width="3" stroke-dasharray="0,50,50,0,50,50" stroke-linejoin="null" stroke-linecap="null" x1="50.30496" y1="50.13461" x2="50.78066" y2="50.25032" id="svg_5" stroke="#000000"/>
+  <rect fill="#000000" stroke="#000000" stroke-width="3" stroke-dasharray="0,50,50,0,50,50" stroke-linejoin="null" stroke-linecap="null" x="50" y="50" width="1.5" height="1.5" id="svg_7"/>
  </g>
 </svg>
