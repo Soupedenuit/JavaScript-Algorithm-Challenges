@@ -1,8 +1,8 @@
 ﻿/* SAY HI (copied, not original) */
 
 function sayHi(){
-  var txtName = window.document.getElementById("txtName").value;
-  window.document.getElementById("txtOutput").innerHTML = "Hi there, " + txtName + "! Pleasure to have you here!"
+  var txtName = document.getElementById("txtName").value;
+  document.getElementById("txtOutput").innerHTML = "Hi there, " + txtName + "! Pleasure to have you here!"
   }
 
 /* REVERSE A STRING (Jan 17 2017)  */
@@ -21,8 +21,9 @@ $( document ).ready(function() {
 
 
 /* FACTORIALIZE A NUMBER (Jan 17 2017) */
-
-function factorializeMe() {
+/* USING addEventListener ==============>  */
+/* removed:  function factorializeMe() {  */
+integerIn2.addEventListener("click", function() {
   var x = integerIn.value;
   var factorIt = 1;
   for (var i = 1; i <= x; i++) {
@@ -31,7 +32,7 @@ function factorializeMe() {
   var factorItCommas =
   factorIt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   document.getElementById("integerOut").innerHTML  = factorItCommas;
-  }
+});
 
 /* CHECK FOR PALINDROMES (Jan 19 2017) */
 
@@ -157,7 +158,7 @@ function convertToRomanNum(num) {
 
   var result = roman.join('');
 
-  document.getElementById("romanOut").innerHTML = result;
+  window.document.getElementById("romanOut").innerHTML = result;
 }
 
 /*
