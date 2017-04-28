@@ -1,0 +1,146 @@
+﻿<!doctype HTML>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="Forms.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <html lang ="eng-us">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Forms testing</title>
+    <link rel="icon" type="image/icon" href="paw-print.png" />
+
+  </head>
+
+<body>
+
+<nav role="navigation">
+
+  <a href="#" class="one-line">About me</a>
+  <a href="https://soupedenuit.github.io/" target="_blank"class="one-line">My Github Page</a>
+  <a href="http://codepen.io/Soupedenuit/" target="_blank"class="one-line">My Codepen Page</a>
+  <a href="https://www.freecodecamp.com/" target="_blank" class="one-line">Free Code Camp</a>
+  <a href="https://forum.freecodecamp.com/" target="_blank">Free Code Camp<br>Forum</a>
+  <img id="tony1" src="tony1.jpeg" alt="pic">
+
+</nav>
+
+<h1>Basic JavaScript Algorithms I've solved and embedded in forms</h1>
+
+<div class="flexbox-model">
+
+
+<!-- SAY HI (copied, not original) -->
+
+<form action="" class="js-challenges first-form">
+  <legend>Welcome</legend>
+  <label>Type your name: </label>
+  <input type="text" class="color-input" id="txtName" value="Tony" />
+  <input type="button"
+    value="click me"
+    class="button" onclick="sayHi()" />
+  <p class="boldOutput" id="txtOutput">_</p>
+</form>
+
+
+<!-- REVERSE A STRING (Jan 17 2017) -->
+<!-- Using jQuery -->
+
+ <form action="" class="js-challenges first-form">
+   <legend>Basic Algorithm challenge</br> - Jan 17, 2017</legend>
+   <label>This function reverses any string.</label>
+   <input type="text" class="color-input"
+     id="strIn" value="dranéM eniotnA" />
+   <input type="button" class="button"
+     value="reverse me"
+     id="reverseString" /> <!-- using jQuery -->
+   <p class="boldOutput"
+     id="strOut">_</p>
+ </form>
+
+
+<!-- FACTORIALIZE A NUMBER (Jan 17 2017) -->
+<!-- USING addEventListener -->
+
+  <form action="" class="js-challenges">
+    <legend>Basic Algorithm challenge</br> - Jan 17, 2017</legend>
+    <label>This function factorializes any positive integer. </br>
+      (Any number up to 170 actually - any higher number results in a factorial too high to handle). </br>Limit is set to 170.</label>
+    <input type="number" class="color-input" id="integerIn" value="0" min="0" max="170" />
+    <input type="button" class="buttonM" value="factorialize me" id="integerIn2" />
+    <!--  onclick="factorializeMe()" -->
+    <p class="boldOutput" id="integerOut">_</p>
+  </form>
+
+
+<!-- CHECK FOR PALINDROMES (Jan 19 2017) -->
+
+  <form action="" class="js-challenges">
+    <legend>Basic Algorithm challenge</br> - Jan 19, 2017</legend>
+    <label>This function checks a string (alpha-numeric only) and returns true if it's a palindrome. </br>Spaces, punctuation and symbols are <ins>ignored</ins>.</label>
+    <input type="text" class="color-input"
+      id="checkIn" value="A man, a plan, a canal. Panama" />
+    <button type="button" class="button"  value="true or false" onclick="palindrome()" >true or false</button>
+    <p class="boldOutput" id="checkOut">_</p>
+  </form>
+
+
+<!-- ABBREVIATE ANY SENTENCE TO AN ACCRONYM:
+  (accidental result while trying to solve the Title Case a Sentence challenge in early Feb 2017)-->
+
+<form action="" class="js-challenges">
+  <legend>Accidental result while trying to solve the Title Case a Sentence challenge</br> - early Feb 2017</legend>
+  <label>Abbreviate any sentence to an upper case ACCRONYM</label>
+  <input type="text" class="color-input" id="sentenceIn" value="Thank god it's Friday" />
+  <input type="button" class="buttonM" value="make an ACCRONYM" onclick="accronym()" />
+  <p class="boldOutput" id="sentenceOut">_</p>
+</form>
+
+
+<!-- SCRAMBLE A PARAGRAPH RANDOMLY -->
+
+<form action="" class="js-challenges">
+  <legend>Personal challenge</br> - Feb 11, 2017</legend>
+  <label>Randomly selects words from any paragraph and returns a scrambled paragraph of equal length. </br>Some words may be used more than once.</label>
+  <textarea type="text" class="color-input" id="paragraphIn">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</textarea>
+  <input type="button" class="buttonL" value="make a new random paragraph" onclick="paragraphScrambler()" />
+  <p class="boldOutput" id="newParagraphOut"></p>
+</form>
+
+
+<!-- REVERSE WORDS IN A STRING -->
+
+<form action="" class="js-challenges">
+  <legend>Intended result while trying to produce a second solution for the Title Case a Sentence challenge</br> - March 2, 2017</legend>
+  <label>Reverse words in a string</label>
+  <input type="text" class="color-input" id="forwardIn" value="one two three four five six seven eight nine ten" />
+  <input type="button" class="button" value="reverse words" onclick="reverseWords()" />
+  <p class="boldOutput" id="backwardsOut">_</p>
+</form>
+
+</div>
+
+<!-- ROMAN NUMERAL CONVERTER (Apr 14, 2017) -->
+
+<form action="" class="js-challenges">
+  <legend>Intermediate Algorithm challenge</br> - April 14, 2017</legend>
+  <label>Convert the given number into a roman numeral.</br>(Any number up to 399,999. I did not program the roman numeral equivalent for 500,000 and it would be required to convert 400,000.)</label>
+  <input type="number" class="color-input" id="numberIn" value="1973" min="0" max="399999" />
+  <input type="button" class="button" value="convert" onclick="convertToRomanNum()" />
+  <p class="boldOutput" id="romanOut">_</p>
+</form>
+
+</div>
+
+<hr />
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="Forms.js">
+</script>
+
+</body>
+
+</html>
