@@ -77,7 +77,8 @@ form {
 input.color-input {
   display: block;
   margin: 20px auto 10px auto;
-  min-width: 400px;
+  width: 80%;
+  max-width: 400px;
   white-space: initial;
   height: 25px;
   background-color: #E6E6FA;
