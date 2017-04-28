@@ -125,7 +125,8 @@ textarea, #newParagraphOut {
 .button {
   display: block;
   margin: 0 auto 10px auto;
-  width: 120px;
+  width: 90%;
+  max-width: 120px;
   height: 25px;
   color: white;
   background-color: RGB(80, 80, 95);
@@ -138,7 +139,8 @@ textarea, #newParagraphOut {
 .buttonM {
   display: block;
   margin: 0 auto 10px auto;
-  width: 180px;
+  width: 90%;
+  max-width: 180px;
   height: 25px;
   color: white;
   background-color: RGB(80, 80, 95);
@@ -151,7 +153,8 @@ textarea, #newParagraphOut {
 .buttonL {
   display: block;
   margin: 0 auto 10px auto;
-  width: 250px;
+  width: 90%;
+  max-width: 200px;
   height: 25px;
   color: white;
   background-color: RGB(80, 80, 95);
