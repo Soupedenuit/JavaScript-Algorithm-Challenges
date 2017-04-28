@@ -98,7 +98,8 @@ input.color-input {
 textarea, #newParagraphOut {
   display: block;
   margin: 20px auto 10px auto;
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
   height: 250px;
   background-color: #E6E6FA;
   /* background-color: #ffffcc; */
