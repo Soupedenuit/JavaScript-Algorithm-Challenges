@@ -9,7 +9,7 @@ function sayHi(){
 /* USING jQuery ==============>  */
 
 $( document ).ready(function() {
-  $( "#reverseString" ).click(function() {
+  $( "#reverseString" ).on('click touchstart', function() {
   var y = document.getElementById("strIn").value;
   var extract = y.split("");
   var backwards = extract.reverse();
