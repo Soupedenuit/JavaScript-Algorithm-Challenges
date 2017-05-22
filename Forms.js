@@ -23,7 +23,7 @@ $( document ).ready(function() {
 /* FACTORIALIZE A NUMBER (Jan 17 2017) */
 /* USING addEventListener ==============>  */
 /* removed:  function factorializeMe() {  */
-integerIn2.addEventListener("click", function() {
+document.getElementById("integerIn2").addEventListener("click", function() {
   var x = integerIn.value;
   var factorIt = 1;
   for (var i = 1; i <= x; i++) {
