@@ -34,6 +34,17 @@ document.getElementById("integerIn2").addEventListener("touchstart", function() 
   document.getElementById("integerOut").innerHTML  = factorItCommas;
 });
 
+document.getElementById("integerIn2").addEventListener("click", function() {
+  var x = integerIn.value;
+  var factorIt = 1;
+  for (var i = 1; i <= x; i++) {
+  factorIt *= i;
+  }
+  var factorItCommas =
+  factorIt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  document.getElementById("integerOut").innerHTML  = factorItCommas;
+});
+
 /* CHECK FOR PALINDROMES (Jan 19 2017) */
 
 function palindrome() {
