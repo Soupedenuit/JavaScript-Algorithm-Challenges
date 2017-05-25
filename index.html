@@ -77,12 +77,12 @@
 
 <!-- CHECK FOR PALINDROMES (Jan 19 2017) -->
 
-  <form action="" class="js-challenges">
+  <form action="" class="js-challenges" onSubmit="palindrome()">
     <legend>Basic Algorithm challenge</br> - Jan 19, 2017</legend>
     <label>This function checks a string (alpha-numeric only) and returns true if it's a palindrome. </br>Spaces, punctuation and symbols are <ins>ignored</ins>.</label>
     <input type="text" class="color-input"
       id="checkIn" value="A man, a plan, a canal. Panama" />
-    <button type="button" class="button"  value="true or false" onclick="palindrome()" >true or false</button>
+    <button type="submit" class="button"  value="true or false">true or false</button>
     <p class="boldOutput" id="checkOut">_</p>
   </form>
 
