@@ -134,6 +134,7 @@ textarea, #newParagraphOut {
   font-weight: bold;
   text-align: center;
   font-family: Palatino, Verdana, 'sans serif';
+  cursor: pointer:
 }
 
 .buttonM {
